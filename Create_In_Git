@@ -1,0 +1,10 @@
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+	<validationRules>
+		<fullName>Flight_Hours_May_Only_be_increased</fullName>
+		<active>true</active>
+		<description>Flight hours may only be increased, not decreased.</description>
+		<errorConditionFormula>PRIORVALUE( Flight_Hours__c )  &gt;  Flight_Hours__c</errorConditionFormula>
+		<errorDisplayField>Name</errorDisplayField>
+		<errorMessage>You may not decrease the number of flight hours on record.</errorMessage>
+	</validationRules>
+</CustomObject>
