@@ -1,0 +1,9 @@
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+	<fields>
+		<fullName>AA_Field__c</fullName>
+		<defaultValue>false</defaultValue>
+		<externalId>false</externalId>
+		<label>AA_Field</label>
+		<trackFeedHistory>false</trackFeedHistory>
+		<type>Checkbox</type>
+	</fields>
