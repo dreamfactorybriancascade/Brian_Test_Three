@@ -1,0 +1,486 @@
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+	<actionOverrides>
+		<actionName>Accept</actionName>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>CancelEdit</actionName>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>Clone</actionName>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>Delete</actionName>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>Edit</actionName>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>Follow</actionName>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>List</actionName>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>New</actionName>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>SaveEdit</actionName>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>Tab</actionName>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>View</actionName>
+		<type>Default</type>
+	</actionOverrides>
+	<allowInChatterGroups>true</allowInChatterGroups>
+	<compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+	<compactLayouts>
+		<fullName>Mobile</fullName>
+		<fields>Name</fields>
+		<fields>Flight_Hours__c</fields>
+		<fields>Model__c</fields>
+		<fields>Purchase_Order__c</fields>
+		<label>Mobile</label>
+	</compactLayouts>
+	<deploymentStatus>Deployed</deploymentStatus>
+	<enableActivities>true</enableActivities>
+	<enableBulkApi>true</enableBulkApi>
+	<enableFeeds>false</enableFeeds>
+	<enableHistory>true</enableHistory>
+	<enableReports>true</enableReports>
+	<enableSearch>true</enableSearch>
+	<enableSharing>true</enableSharing>
+	<enableStreamingApi>true</enableStreamingApi>
+	<fieldSets>
+		<fullName>Flight_Group</fullName>
+		<description>May be deployed in trigger.</description>
+		<displayedFields>
+			<field>Fuel_Use__c</field>
+			<isFieldManaged>false</isFieldManaged>
+			<isRequired>false</isRequired>
+		</displayedFields>
+		<displayedFields>
+			<field>LastActivityDate</field>
+			<isFieldManaged>false</isFieldManaged>
+			<isRequired>false</isRequired>
+		</displayedFields>
+		<displayedFields>
+			<field>Name</field>
+			<isFieldManaged>false</isFieldManaged>
+			<isRequired>false</isRequired>
+		</displayedFields>
+		<displayedFields>
+			<field>Model__c</field>
+			<isFieldManaged>false</isFieldManaged>
+			<isRequired>false</isRequired>
+		</displayedFields>
+		<displayedFields>
+			<field>Flight_Hours__c</field>
+			<isFieldManaged>false</isFieldManaged>
+			<isRequired>false</isRequired>
+		</displayedFields>
+		<label>Flight Group</label>
+	</fieldSets>
+	<fields>
+		<fullName>Base_Fare__c</fullName>
+		<defaultValue>100.00</defaultValue>
+		<description>Base fair for air travel to any destination.</description>
+		<externalId>false</externalId>
+		<label>Base Fare</label>
+		<precision>12</precision>
+		<required>false</required>
+		<scale>2</scale>
+		<trackHistory>false</trackHistory>
+		<trackTrending>false</trackTrending>
+		<type>Currency</type>
+	</fields>
+	<fields>
+		<fullName>Credit_Card__c</fullName>
+		<description>Credit Card Number</description>
+		<externalId>false</externalId>
+		<label>Credit Card</label>
+		<length>16</length>
+		<maskChar>X</maskChar>
+		<maskType>creditCard</maskType>
+		<required>false</required>
+		<trackHistory>false</trackHistory>
+		<trackTrending>false</trackTrending>
+		<type>EncryptedText</type>
+	</fields>
+	<fields>
+		<fullName>Flight_Hours__c</fullName>
+		<description>Number of hours flown by aircraft.</description>
+		<externalId>false</externalId>
+		<inlineHelpText>Record the number of hours flown by aircraft.</inlineHelpText>
+		<label>Flight Hours</label>
+		<precision>10</precision>
+		<required>false</required>
+		<scale>0</scale>
+		<trackHistory>false</trackHistory>
+		<trackTrending>false</trackTrending>
+		<type>Number</type>
+		<unique>false</unique>
+	</fields>
+	<fields>
+		<fullName>Fuel_Use__c</fullName>
+		<externalId>false</externalId>
+		<inlineHelpText>Fuel used in Gallons Annually</inlineHelpText>
+		<label>Annual Fuel Use</label>
+		<precision>16</precision>
+		<required>false</required>
+		<scale>0</scale>
+		<trackHistory>false</trackHistory>
+		<trackTrending>false</trackTrending>
+		<type>Number</type>
+		<unique>false</unique>
+	</fields>
+	<fields>
+		<fullName>Global_Test__c</fullName>
+		<description>Testing this feature on a custom object</description>
+		<externalId>false</externalId>
+		<globalPicklist>Global_Test</globalPicklist>
+		<label>Global Test</label>
+		<trackHistory>false</trackHistory>
+		<trackTrending>false</trackTrending>
+		<type>Picklist</type>
+	</fields>
+	<fields>
+		<fullName>Model__c</fullName>
+		<description>Identifying Model of Aircraft</description>
+		<externalId>false</externalId>
+		<inlineHelpText>Select the model of Aircraft</inlineHelpText>
+		<label>Model</label>
+		<picklist>
+			<picklistValues>
+				<fullName>Cesna Twin Engine</fullName>
+				<default>false</default>
+			</picklistValues>
+			<picklistValues>
+				<fullName>Boeing 737</fullName>
+				<default>false</default>
+			</picklistValues>
+			<picklistValues>
+				<fullName>Boeing 747</fullName>
+				<default>false</default>
+			</picklistValues>
+			<picklistValues>
+				<fullName>Boeing 757</fullName>
+				<default>false</default>
+			</picklistValues>
+			<sorted>false</sorted>
+		</picklist>
+		<trackHistory>false</trackHistory>
+		<trackTrending>false</trackTrending>
+		<type>Picklist</type>
+	</fields>
+	<fields>
+		<fullName>Office_Supplies__c</fullName>
+		<deleteConstraint>SetNull</deleteConstraint>
+		<description>Supply Order for flight crew.</description>
+		<externalId>false</externalId>
+		<inlineHelpText>Identifies the supply order for flight crew.</inlineHelpText>
+		<label>Office Supplies</label>
+		<referenceTo>Office_Supplies__c</referenceTo>
+		<relationshipLabel>Airplanes</relationshipLabel>
+		<relationshipName>Airplanes</relationshipName>
+		<required>false</required>
+		<trackHistory>false</trackHistory>
+		<trackTrending>false</trackTrending>
+		<type>Lookup</type>
+	</fields>
+	<fields>
+		<fullName>Pilot_Phone__c</fullName>
+		<description>Secure Cell Phone for Pilot</description>
+		<encrypted>true</encrypted>
+		<externalId>false</externalId>
+		<label>Pilot Phone</label>
+		<required>false</required>
+		<trackHistory>false</trackHistory>
+		<trackTrending>false</trackTrending>
+		<type>Phone</type>
+	</fields>
+	<fields>
+		<fullName>Primary_Hub__c</fullName>
+		<externalId>false</externalId>
+		<label>Primary Hub</label>
+		<picklist>
+			<picklistValues>
+				<fullName>Atlanta</fullName>
+				<default>false</default>
+			</picklistValues>
+			<picklistValues>
+				<fullName>Boston</fullName>
+				<default>false</default>
+			</picklistValues>
+			<picklistValues>
+				<fullName>Chicago</fullName>
+				<default>false</default>
+			</picklistValues>
+			<picklistValues>
+				<fullName>Los Angeles</fullName>
+				<default>false</default>
+			</picklistValues>
+			<picklistValues>
+				<fullName>Seattle</fullName>
+				<default>false</default>
+			</picklistValues>
+			<sorted>false</sorted>
+		</picklist>
+		<trackHistory>false</trackHistory>
+		<trackTrending>false</trackTrending>
+		<type>Picklist</type>
+	</fields>
+	<fields>
+		<fullName>Purchase_Order__c</fullName>
+		<description>Purchase Order associated with supplies for this Airplane</description>
+		<encrypted>false</encrypted>
+		<externalId>false</externalId>
+		<formula>Office_Supplies__r.Purchase_Order__c</formula>
+		<formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+		<inlineHelpText>Purchase Order associated with supplies for this Airplane</inlineHelpText>
+		<label>Purchase Order</label>
+		<required>false</required>
+		<trackHistory>false</trackHistory>
+		<trackTrending>false</trackTrending>
+		<type>Text</type>
+		<unique>false</unique>
+	</fields>
+	<fields>
+		<fullName>Regional_Crew__c</fullName>
+		<externalId>false</externalId>
+		<label>Regional Crew</label>
+		<picklist>
+			<controllingField>Primary_Hub__c</controllingField>
+			<picklistValues>
+				<fullName>Midwest</fullName>
+				<controllingFieldValues>Chicago</controllingFieldValues>
+				<controllingFieldValues>Seattle</controllingFieldValues>
+				<default>false</default>
+			</picklistValues>
+			<picklistValues>
+				<fullName>Northeast</fullName>
+				<controllingFieldValues>Boston</controllingFieldValues>
+				<default>false</default>
+			</picklistValues>
+			<picklistValues>
+				<fullName>Southeast</fullName>
+				<controllingFieldValues>Atlanta</controllingFieldValues>
+				<default>false</default>
+			</picklistValues>
+			<picklistValues>
+				<fullName>Southwest</fullName>
+				<controllingFieldValues>Los Angeles</controllingFieldValues>
+				<controllingFieldValues>Seattle</controllingFieldValues>
+				<default>false</default>
+			</picklistValues>
+			<sorted>false</sorted>
+		</picklist>
+		<trackHistory>false</trackHistory>
+		<trackTrending>false</trackTrending>
+		<type>Picklist</type>
+	</fields>
+	<fields>
+		<fullName>Test_Text__c</fullName>
+		<description>Test field for confirming data dictionary results</description>
+		<encrypted>false</encrypted>
+		<externalId>false</externalId>
+		<inlineHelpText>Test, Test</inlineHelpText>
+		<label>Test Text</label>
+		<length>32</length>
+		<required>false</required>
+		<trackHistory>false</trackHistory>
+		<trackTrending>false</trackTrending>
+		<type>Text</type>
+		<unique>false</unique>
+	</fields>
+	<label>Airplanes</label>
+	<listViews>
+		<fullName>All</fullName>
+		<filterScope>Everything</filterScope>
+		<label>All</label>
+	</listViews>
+	<listViews>
+		<fullName>Marketing_View</fullName>
+		<columns>NAME</columns>
+		<columns>Flight_Hours__c</columns>
+		<columns>Model__c</columns>
+		<columns>Purchase_Order__c</columns>
+		<filterScope>Everything</filterScope>
+		<filters>
+			<field>Flight_Hours__c</field>
+			<operation>lessThan</operation>
+			<value>10000</value>
+		</filters>
+		<label>Marketing View</label>
+	</listViews>
+	<listViews>
+		<fullName>Mechanics_View</fullName>
+		<columns>NAME</columns>
+		<columns>Flight_Hours__c</columns>
+		<columns>Model__c</columns>
+		<filterScope>Everything</filterScope>
+		<filters>
+			<field>Flight_Hours__c</field>
+			<operation>greaterThan</operation>
+			<value>50000</value>
+		</filters>
+		<label>Mechanics View</label>
+	</listViews>
+	<listViews>
+		<fullName>Test_Queue_Airplanes</fullName>
+		<filterScope>Queue</filterScope>
+		<label>Test Queue</label>
+		<queue>Test_Queue</queue>
+		<sharedTo>
+			<allInternalUsers></allInternalUsers>
+		</sharedTo>
+	</listViews>
+	<nameField>
+		<label>Airplanes Name</label>
+		<trackHistory>false</trackHistory>
+		<type>Text</type>
+	</nameField>
+	<pluralLabel>Airplanes</pluralLabel>
+	<recordTypeTrackHistory>false</recordTypeTrackHistory>
+	<recordTypes>
+		<fullName>California_User</fullName>
+		<active>true</active>
+		<description>Record Type used for the California User profile</description>
+		<label>California User</label>
+		<picklistValues>
+			<picklist>Model__c</picklist>
+			<values>
+				<fullName>Cesna Twin Engine</fullName>
+				<default>false</default>
+			</values>
+		</picklistValues>
+		<picklistValues>
+			<picklist>Primary_Hub__c</picklist>
+			<values>
+				<fullName>Atlanta</fullName>
+				<default>false</default>
+			</values>
+			<values>
+				<fullName>Boston</fullName>
+				<default>false</default>
+			</values>
+			<values>
+				<fullName>Chicago</fullName>
+				<default>false</default>
+			</values>
+			<values>
+				<fullName>Los Angeles</fullName>
+				<default>false</default>
+			</values>
+		</picklistValues>
+		<picklistValues>
+			<picklist>Regional_Crew__c</picklist>
+			<values>
+				<fullName>Midwest</fullName>
+				<default>false</default>
+			</values>
+			<values>
+				<fullName>Northeast</fullName>
+				<default>false</default>
+			</values>
+			<values>
+				<fullName>Southeast</fullName>
+				<default>false</default>
+			</values>
+			<values>
+				<fullName>Southwest</fullName>
+				<default>false</default>
+			</values>
+		</picklistValues>
+	</recordTypes>
+	<recordTypes>
+		<fullName>Georgia_Users</fullName>
+		<active>true</active>
+		<description>Record Type used for the Georgia User Profile</description>
+		<label>Georgia Users</label>
+		<picklistValues>
+			<picklist>Model__c</picklist>
+			<values>
+				<fullName>Boeing 757</fullName>
+				<default>false</default>
+			</values>
+			<values>
+				<fullName>Cesna Twin Engine</fullName>
+				<default>false</default>
+			</values>
+		</picklistValues>
+		<picklistValues>
+			<picklist>Primary_Hub__c</picklist>
+			<values>
+				<fullName>Atlanta</fullName>
+				<default>false</default>
+			</values>
+			<values>
+				<fullName>Boston</fullName>
+				<default>false</default>
+			</values>
+			<values>
+				<fullName>Chicago</fullName>
+				<default>false</default>
+			</values>
+			<values>
+				<fullName>Los Angeles</fullName>
+				<default>false</default>
+			</values>
+		</picklistValues>
+		<picklistValues>
+			<picklist>Regional_Crew__c</picklist>
+			<values>
+				<fullName>Midwest</fullName>
+				<default>false</default>
+			</values>
+			<values>
+				<fullName>Northeast</fullName>
+				<default>false</default>
+			</values>
+			<values>
+				<fullName>Southeast</fullName>
+				<default>false</default>
+			</values>
+			<values>
+				<fullName>Southwest</fullName>
+				<default>false</default>
+			</values>
+		</picklistValues>
+	</recordTypes>
+	<searchLayouts>
+		<searchResultsAdditionalFields>Flight_Hours__c</searchResultsAdditionalFields>
+		<searchResultsAdditionalFields>Model__c</searchResultsAdditionalFields>
+	</searchLayouts>
+	<sharingModel>Private</sharingModel>
+	<validationRules>
+		<fullName>Flight_Hours_May_Only_be_increased</fullName>
+		<active>true</active>
+		<description>Flight hours may only be increased, not decreased.</description>
+		<errorConditionFormula>PRIORVALUE( Flight_Hours__c )  &gt;  Flight_Hours__c</errorConditionFormula>
+		<errorDisplayField>Name</errorDisplayField>
+		<errorMessage>You may not decrease the number of flight hours on record.</errorMessage>
+	</validationRules>
+	<webLinks>
+		<fullName>Supplies</fullName>
+		<availability>online</availability>
+		<description>Return to Office Supplies</description>
+		<displayType>button</displayType>
+		<linkType>javascript</linkType>
+		<masterLabel>Supplies</masterLabel>
+		<openType>onClickJavaScript</openType>
+		<protected>false</protected>
+		<url>{!Office_Supplies__c.Name}</url>
+	</webLinks>
+</CustomObject>
